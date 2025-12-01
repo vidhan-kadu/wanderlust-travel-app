@@ -1,0 +1,163 @@
+body {
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navbar  */
+.navbar {
+  height: 4.5rem;
+  background-color: white;
+}
+
+.fa-compass {
+  color: #fe424d;
+  font-size: 1.8rem;
+}
+
+.nav-link {
+  color: #222222 !important;
+}
+
+/* Footer */
+.f-info-links a {
+  text-decoration: none;
+  color: #222222;
+}
+
+.f-info-links a:hover {
+  text-decoration: underline;
+}
+
+.f-info-links,
+.f-info-socials,
+.f-info-brand {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.f-info-socials i {
+  font-size: 1rem;
+  margin-right: 1rem;
+}
+
+.f-info {
+  text-align: center;
+  height: auto;
+  padding: 1.5rem 0;
+  background-color: #ebebeb;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: space-evenly;
+}
+
+.form-label {
+  font-size: clamp(12px, 1vw, 1rem);
+
+  font-weight: 600;
+  margin: 0 !important;
+}
+
+.input-section {
+  padding: 0 !important;
+
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea {
+  font-size: clamp(12px, 1vw, 1rem) !important;
+  max-width: 100%;
+}
+/* Cards */
+
+.listing-card {
+  border: none !important;
+  margin-bottom: 2rem;
+}
+
+.card-img-top {
+  border-radius: 1rem !important;
+  width: 100% !important;
+  object-fit: cover !important;
+}
+
+.card-body {
+  padding: 0 !important;
+}
+
+.card-text {
+  font-weight: 400 !important;
+}
+
+.listing-link {
+  text-decoration: none;
+}
+
+/* Card-Effect */
+
+.card-img-overlay {
+  opacity: 0;
+}
+
+.card-img-overlay:hover {
+  opacity: 0.2;
+  background-color: white;
+}
+
+/* New Page */
+
+.add-btn {
+  background-color: #fe424d !important;
+  border: none !important;
+}
+
+/* Edit Page */
+
+.edit-btn {
+  background-color: #fe424d !important;
+  border: none !important;
+}
+
+/* Show page */
+
+.show-img {
+  height: 34vh;
+}
+
+.show-card {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+main {
+  flex: 1 0 auto;
+  padding-bottom: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+#map {
+  height: 400px;
+  width: 80vh;
+}
+
+.preview {
+  height: 8rem;
+  width: auto;
+}
