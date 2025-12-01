@@ -49,7 +49,7 @@ module.exports.createListing = async (req, res, next) => {
         },
 
         headers: {
-          "User-Agent": "YourAppName/1.0",
+          "User-Agent": "Wanderlust",
         },
       }
     );
