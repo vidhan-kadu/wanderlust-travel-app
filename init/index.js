@@ -10,7 +10,7 @@ main()
     console.log("connected to DB");
   })
   .catch((err) => {
-    console.log(err);
+    console.log("the errorr is" , err);
   });
 
 async function main() {
@@ -21,7 +21,7 @@ const initDB = async () => {
   await Listing.deleteMany({});
   initData.data = initData.data.map((obj) => ({...obj,owner: "69220d5d9fdeac0c73cf663b"}));
   await Listing.insertMany(initData.data);
-  console.log("data was intialized");
+  console.log("data was intialized here");
 };
 initDB();
 
