@@ -49,7 +49,7 @@ module.exports.createListing = async (req, res, next) => {
         },
 
         headers: {
-          "User-Agent": "Wanderlust",
+          "User-Agent": "Wanderlust-vidhan",
         },
       }
     );
@@ -118,7 +118,7 @@ module.exports.updateListing = async (req, res) => {
             limit: 1,
           },
           headers: {
-            "User-Agent": "MajorProject-App",
+            "User-Agent": "Wanderlust-vidhan",
           },
         }
       );
