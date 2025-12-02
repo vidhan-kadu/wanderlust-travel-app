@@ -62,7 +62,7 @@ const store = MongoStore.create({
 //   console.log(all);
 //   res.send("ok");
 // });
-
+// 
  
 store.on("error", () => {
   console.log("ERROR in MONGO SESSION STORE", err);
@@ -121,5 +121,5 @@ app.use((err, req, res, next) => {
 const port = process.env.PORT || 8080;
 
 app.listen(port, () => {
-  console.log(`Server is listening on port ${port}`);
+  console.log(`Server is listening on the port ${port}`);
 });
