@@ -10,9 +10,6 @@ const sampleListings = [
     price: 1500,
     location: "Malibu",
     country: "United States",
-    // geometry: {
-    // type: "Point",
-    // coordinates: [-118.7798, 34.0259]
       category: "Beaches",
     
 },

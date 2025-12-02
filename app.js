@@ -1,8 +1,6 @@
 if (process.env.NODE_ENV != "production") {
   require("dotenv").config();
 }
-// console.log("ATLASDB_URL =", process.env.ATLASDB_URL);
-// console.log("SECRET =", process.env.SECRET);
 
 const express = require("express");
 const app = express();
@@ -31,7 +29,7 @@ const dbUrl = process.env.ATLASDB_URL;
 
 main()
   .then(() => {
-    console.log("connected to DB" , dbUrl);
+    console.log("connected to DB");
   })
   .catch((err) => {
     console.log(err);
@@ -62,8 +60,8 @@ const store = MongoStore.create({
 //   console.log(all);
 //   res.send("ok");
 // });
-// 
- 
+//
+
 store.on("error", () => {
   console.log("ERROR in MONGO SESSION STORE", err);
 });
