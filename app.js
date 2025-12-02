@@ -21,6 +21,7 @@ const flash = require("connect-flash");
 const passport = require("passport");
 const LocalStrategy = require("passport-local");
 const User = require("./models/user.js");
+const Listing = require("./models/listing.js");
 
 const listingRouter = require("./routes/listing.js");
 const reviewRouter = require("./routes/review.js");
@@ -30,7 +31,7 @@ const dbUrl = process.env.ATLASDB_URL;
 
 main()
   .then(() => {
-    console.log("connected to DB");
+    console.log("connected to DB" , dbUrl);
   })
   .catch((err) => {
     console.log(err);
@@ -56,6 +57,13 @@ const store = MongoStore.create({
   touchAfter: 24 * 3600,
 });
 
+// app.get("/all" , async (req, res)=>{
+//   const all = await Listing.find({});
+//   console.log(all);
+//   res.send("ok");
+// });
+
+ 
 store.on("error", () => {
   console.log("ERROR in MONGO SESSION STORE", err);
 });
