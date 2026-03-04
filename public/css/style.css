@@ -3,6 +3,10 @@ body {
   display: flex;
   flex-direction: column;
 }
+html,
+body {
+  overflow-x: hidden;
+}
 
 /* Navbar  */
 .navbar {
@@ -17,6 +21,76 @@ body {
 
 .nav-link {
   color: #222222 !important;
+}
+
+/* filters */
+
+.filter {
+  min-width: 70px;
+  flex: 0 0 auto;
+  opacity: 0.7;
+  transition: all 0.2s ease;
+}
+.filter i {
+  font-size: 1.2rem;
+}
+.filter:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+}
+.filter:active {
+  transform: scale(0.95);
+}
+
+#filters {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  padding-top: 1rem;
+}
+
+.filters-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0 1rem;
+}
+
+.filter {
+  text-align: center;
+  opacity: 0.7;
+}
+
+.filter:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.filter p {
+  font-size: 0.9rem;
+}
+
+.tax-info {
+  display: none;
+}
+
+.tax-toggle {
+  border: 1px solid black;
+  border-radius: 1rem;
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+a:hover {
+  color: inherit;
+}
+
+#filters a {
+  text-decoration: none;
+  color: inherit;
 }
 
 /* Footer */
@@ -73,21 +147,38 @@ textarea {
   font-size: clamp(12px, 1vw, 1rem) !important;
   max-width: 100%;
 }
+
 /* Cards */
 
 .listing-card {
   border: none !important;
-  margin-bottom: 2rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.card-body {
+  padding: 1rem 1rem 1.2rem 1rem;
+}
+
+.card-text b {
+  font-weight: 600;
 }
 
 .card-img-top {
   border-radius: 1rem !important;
   width: 100% !important;
   object-fit: cover !important;
+  transition: transform 0.4s ease !important;
+  height: 18rem !important;
 }
 
 .card-body {
-  padding: 0 !important;
+  padding: 1rem !important;
 }
 
 .card-text {
@@ -95,7 +186,9 @@ textarea {
 }
 
 .listing-link {
+  display: block;
   text-decoration: none;
+  color: inherit;
 }
 
 /* Card-Effect */

@@ -10,7 +10,7 @@ main()
     console.log("connected to DB");
   })
   .catch((err) => {
-    console.log("the errorr is" , err);
+    console.log("the errorr is", err);
   });
 
 async function main() {
@@ -19,11 +19,13 @@ async function main() {
 
 const initDB = async () => {
   await Listing.deleteMany({});
-  initData.data = initData.data.map((obj) => ({...obj,owner: "69220d5d9fdeac0c73cf663b"}));
+  initData.data = initData.data.map((obj) => ({
+    ...obj,
+    owner: "69220d5d9fdeac0c73cf663b",
+  }));
   await Listing.insertMany(initData.data);
   console.log("data was intialized here");
 };
 initDB();
-
 
 // initData.data = initData.data.map((obj) => ({...obj,owner: "69220d5d9fdeac0c73cf663b"}));

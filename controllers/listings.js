@@ -51,7 +51,7 @@ module.exports.createListing = async (req, res, next) => {
         headers: {
           "User-Agent": "Wanderlust-vidhan",
         },
-      }
+      },
     );
 
     const newListing = new Listing(req.body.listing);
@@ -120,7 +120,7 @@ module.exports.updateListing = async (req, res) => {
           headers: {
             "User-Agent": "Wanderlust-vidhan",
           },
-        }
+        },
       );
 
       if (response.data && response.data.length > 0) {

@@ -1,0 +1,177 @@
+/* Responsive Listing card */
+@media (min-width: 992px) {
+  .listing-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.12);
+  }
+
+  .listing-card:hover .card-img-top {
+    transform: scale(1.04);
+  }
+}
+
+@media (max-width: 768px) {
+  .listing-card {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+}
+
+/* Navbar Responsive */
+
+@media (max-width: 768px) {
+  /* Default state */
+  .navbar .navbar-toggler {
+    border: none !important;
+    background-color: rgba(0, 0, 0, 0.05) !important;
+    border-radius: 0.6rem;
+    padding: 0.4rem 0.7rem;
+    transition: all 0.2s ease;
+  }
+
+  /* Hover / Tap effect */
+  .navbar .navbar-toggler:hover {
+    background-color: rgba(0, 0, 0, 0.1) !important;
+  }
+
+  /* Active (when clicking) */
+  .navbar .navbar-toggler:active {
+    background-color: rgba(0, 0, 0, 0.15) !important;
+  }
+
+  /* When menu is OPEN */
+  .navbar .navbar-toggler[aria-expanded="true"] {
+    background-color: rgba(13, 110, 253, 0.15) !important;
+  }
+
+  /* Remove ugly focus ring */
+  .navbar .navbar-toggler:focus {
+    box-shadow: none !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .tax-toggle {
+    transform: translateX(60px);
+  }
+}
+@media (max-width: 768px) {
+  /* Floating mobile panel */
+  .navbar-collapse.show {
+    background: #ffffff;
+    padding: 1.25rem;
+    border-radius: 1rem;
+    margin-top: 0.5rem;
+    box-shadow: 0 15px 35px rgba(0.2, 0.2, 0.2, 0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  }
+
+  /* Proper section spacing */
+  .navbar-collapse.show .navbar-nav {
+    margin-bottom: 1rem;
+  }
+
+  .navbar-collapse.show .navbar-nav:last-child {
+    margin-bottom: 0;
+  }
+
+  /* Search layout */
+  .navbar-collapse.show form {
+    width: 100%;
+  }
+
+  .navbar-collapse.show .search-inp {
+    flex: 1;
+    padding: 0.6rem 1rem;
+    font-size: 0.95rem;
+  }
+
+  .navbar-collapse.show .search-btn {
+    padding: 0.55rem 1rem;
+    border-radius: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .filters-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #filters {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+
+  #filters::-webkit-scrollbar {
+    display: none;
+  }
+  #filters {
+    margin-top: 0.5rem;
+
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+  }
+
+  .filter {
+    flex: 0 0 auto;
+    text-align: center;
+  }
+  .filter i {
+    font-size: 1.2rem;
+  }
+  .filter:hover {
+    opacity: 1;
+    transform: translateY(-2px);
+  }
+  .filter:active {
+    transform: scale(0.95);
+  }
+}
+
+@media (max-width: 768px) {
+  .tax-toggle {
+    align-self: center;
+  }
+
+  .tax-toggle .form-check-input {
+    transform: scale(1.15);
+    margin: 0.34rem;
+    margin-left: 0.8rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .listing-card {
+    border-radius: 1rem;
+  }
+
+  .card-img-top {
+    border-radius: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .search-btn span {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-collapse .nav-link {
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.5rem;
+    transition: all 0.2s ease;
+  }
+  .navbar-collapse .nav-link:hover {
+    background-color: rgba(13, 110, 253, 0.08);
+    color: #0d6efd;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    z-index: 1050;
+    margin-bottom: 0.5rem;
+  }
+}
