@@ -49,7 +49,7 @@ module.exports.createListing = async (req, res, next) => {
         },
 
         headers: {
-          "User-Agent": "Wanderlust-vidhan",
+          "User-Agent": "vidhan-kadu",
         },
       },
     );

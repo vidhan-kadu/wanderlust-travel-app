@@ -247,7 +247,8 @@ html {
 
 #map {
   height: 400px;
-  width: 80vh;
+  width: 100%;
+  border-radius: 1rem;
 }
 
 .preview {

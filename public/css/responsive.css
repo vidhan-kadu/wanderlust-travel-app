@@ -175,3 +175,29 @@
     margin-bottom: 0.5rem;
   }
 }
+
+@media (max-width: 768px) {
+  #map {
+    height: 280px;
+    width: 100%;
+  }
+}
+
+/* Responsive create new listing  */
+
+@media (max-width: 768px) {
+  .row.mt-1 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .col-md-8 {
+    width: 100%;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .input-section {
+    width: 100%;
+  }
+}
